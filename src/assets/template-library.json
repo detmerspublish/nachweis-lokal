@@ -1,0 +1,245 @@
+[
+  {
+    "id": "brandschutz",
+    "name": "Brandschutz-Begehung",
+    "description": "Jährliche Brandschutz-Begehung nach ASR A2.2",
+    "category": "Sicherheit",
+    "branches": [
+      "alle"
+    ],
+    "interval_days": 365,
+    "items": [
+      {
+        "label": "Flucht- und Rettungswege frei und gekennzeichnet?",
+        "hint": "Breite mind. 1,20 m, keine Versperrungen",
+        "required": true
+      },
+      {
+        "label": "Feuerlöscher vorhanden und geprüft?",
+        "hint": "Prüfdatum < 2 Jahre, Plombierung intakt",
+        "required": true
+      },
+      {
+        "label": "Brandmeldeanlage funktionsfähig?",
+        "hint": "Letzte Wartung prüfen",
+        "required": true
+      },
+      {
+        "label": "Brandschutztüren schließen selbsttätig?",
+        "hint": "Keine Verkeimung, Dichtungen intakt",
+        "required": true
+      },
+      {
+        "label": "Elektrische Anlagen augenscheinlich in Ordnung?",
+        "hint": "Keine sichtbaren Schäden, lose Kabel",
+        "required": true
+      },
+      {
+        "label": "Flucht- und Rettungsplan aktuell und ausgehängt?",
+        "hint": "An jedem Stockwerk, aktuelles Datum",
+        "required": true
+      },
+      {
+        "label": "Rauchmelder vorhanden und funktionsfähig?",
+        "hint": "Testknopf drücken, Batterie prüfen",
+        "required": true
+      },
+      {
+        "label": "Sammelplatz gekennzeichnet und bekannt?",
+        "required": false
+      }
+    ]
+  },
+  {
+    "id": "arbeitsmittel-leitern",
+    "name": "Prüfung Leitern und Tritte",
+    "description": "Wiederkehrende Prüfung von Leitern und Tritten nach BetrSichV",
+    "category": "Arbeitsmittel",
+    "branches": [
+      "handwerk",
+      "hausverwaltung",
+      "alle"
+    ],
+    "interval_days": 365,
+    "items": [
+      {
+        "label": "Typenschild vorhanden und lesbar?",
+        "required": true
+      },
+      {
+        "label": "Holme/Wangen ohne Verformung oder Risse?",
+        "required": true
+      },
+      {
+        "label": "Sprossen/Stufen fest und unbeschädigt?",
+        "required": true
+      },
+      {
+        "label": "Gelenkverbindungen leichtgängig und arretierbar?",
+        "hint": "Nur bei Gelenkleitern",
+        "required": false
+      },
+      {
+        "label": "Rutschhemmende Füße vorhanden und intakt?",
+        "required": true
+      },
+      {
+        "label": "Sicherungshaken / Spreizsperre funktionsfähig?",
+        "required": true
+      },
+      {
+        "label": "Maximale Belastung nicht überschritten?",
+        "hint": "Typenschild prüfen",
+        "required": true
+      }
+    ]
+  },
+  {
+    "id": "erste-hilfe",
+    "name": "Erste-Hilfe-Ausstattung",
+    "description": "Prüfung der Erste-Hilfe-Materialien nach ASR A4.3",
+    "category": "Sicherheit",
+    "branches": [
+      "alle"
+    ],
+    "interval_days": 90,
+    "items": [
+      {
+        "label": "Verbandkasten vorhanden und zugänglich?",
+        "hint": "Standort gekennzeichnet (weisses Kreuz auf grünem Grund)",
+        "required": true
+      },
+      {
+        "label": "Inhalt vollständig (nach DIN 13157 / DIN 13169)?",
+        "hint": "Verbrauchte Materialien ersetzen",
+        "required": true
+      },
+      {
+        "label": "Verfallsdaten aller Materialien gültig?",
+        "required": true
+      },
+      {
+        "label": "Rettungsdecke vorhanden?",
+        "required": true
+      },
+      {
+        "label": "Erste-Hilfe-Anleitung beigelegt?",
+        "required": true
+      },
+      {
+        "label": "Aushang Ersthelfer und Notrufnummern aktuell?",
+        "hint": "Name, Telefon, Standort der Ersthelfer",
+        "required": true
+      },
+      {
+        "label": "Defibrillator (AED) vorhanden und einsatzbereit?",
+        "hint": "Nur wenn vorhanden, Batterie und Pads prüfen",
+        "required": false
+      }
+    ]
+  },
+  {
+    "id": "sicherheitsunterweisung",
+    "name": "Sicherheitsunterweisung",
+    "description": "Jährliche Sicherheitsunterweisung nach ArbSchG §12 und DGUV Vorschrift 1",
+    "category": "Arbeitsschutz",
+    "branches": [
+      "alle"
+    ],
+    "interval_days": 365,
+    "items": [
+      {
+        "label": "Allgemeine Gefahren am Arbeitsplatz besprochen?",
+        "required": true
+      },
+      {
+        "label": "Flucht- und Rettungswege bekannt gemacht?",
+        "hint": "Sammelplatz, Notausgänge zeigen",
+        "required": true
+      },
+      {
+        "label": "Brandschutzordnung erläutert?",
+        "hint": "Verhalten im Brandfall, Feuerlöscherstandorte",
+        "required": true
+      },
+      {
+        "label": "Erste-Hilfe-Einrichtungen und Ersthelfer benannt?",
+        "required": true
+      },
+      {
+        "label": "Persönliche Schutzausrüstung erläutert?",
+        "hint": "Welche PSA wann tragen",
+        "required": false
+      },
+      {
+        "label": "Umgang mit Gefahrstoffen besprochen?",
+        "hint": "Nur wenn relevant für den Arbeitsplatz",
+        "required": false
+      },
+      {
+        "label": "Ergonomie am Arbeitsplatz thematisiert?",
+        "required": false
+      },
+      {
+        "label": "Meldepflicht bei Unfällen und Beinahe-Unfällen erläutert?",
+        "required": true
+      },
+      {
+        "label": "Teilnehmerliste unterschrieben?",
+        "hint": "Alle Anwesenden müssen unterschreiben",
+        "required": true
+      }
+    ]
+  },
+  {
+    "id": "fluchtweg-pruefung",
+    "name": "Fluchtweg- und Notausgang-Prüfung",
+    "description": "Halbjährliche Prüfung der Flucht- und Rettungswege nach ASR A2.3",
+    "category": "Sicherheit",
+    "branches": [
+      "alle"
+    ],
+    "interval_days": 180,
+    "items": [
+      {
+        "label": "Fluchttüren öffnen in Fluchtrichtung und ohne Schlüssel?",
+        "hint": "Panikschloss/Paniktür prüfen",
+        "required": true
+      },
+      {
+        "label": "Fluchtwege frei von Hindernissen und Lagergut?",
+        "hint": "Mindestbreite 1,20 m eingehalten",
+        "required": true
+      },
+      {
+        "label": "Sicherheitsbeleuchtung / Notbeleuchtung funktionsfähig?",
+        "hint": "Test: Hauptbeleuchtung abschalten",
+        "required": true
+      },
+      {
+        "label": "Rettungszeichen (Pfeile, Notausgang) vollständig und sichtbar?",
+        "hint": "Nachleuchtend oder beleuchtet",
+        "required": true
+      },
+      {
+        "label": "Sammelplatz gekennzeichnet und zugänglich?",
+        "required": true
+      },
+      {
+        "label": "Flucht- und Rettungsplan aktuell und ausgehängt?",
+        "hint": "Mindestens an jeder Etage, max. 3 Jahre alt",
+        "required": true
+      },
+      {
+        "label": "Treppenräume frei und Türen selbstschließend?",
+        "hint": "Keine Keile, keine offenstehenden Brandschutztüren",
+        "required": true
+      },
+      {
+        "label": "Aussenbereiche der Fluchttüren frei zugänglich?",
+        "hint": "Keine parkenden Fahrzeuge, keine Absperrungen",
+        "required": true
+      }
+    ]
+  }
+]

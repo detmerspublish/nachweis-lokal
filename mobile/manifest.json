@@ -1,0 +1,22 @@
+{
+  "name": "Nachweis Lokal — Prüfung",
+  "short_name": "Prüfung",
+  "description": "Mobile Prüfungsdurchführung",
+  "start_url": "/mobile/index.html",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#f5f5f5",
+  "theme_color": "#2b6cb0",
+  "icons": [
+    {
+      "src": "/mobile/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/mobile/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

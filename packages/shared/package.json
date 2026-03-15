@@ -1,0 +1,13 @@
+{
+  "name": "@codefabrik/shared",
+  "version": "0.2.0",
+  "private": true,
+  "license": "GPL-3.0-only",
+  "type": "module",
+  "description": "Shared utilities for all Code-Fabrik products (license, crypto, csv)",
+  "exports": {
+    "./license": "./src/license/index.js",
+    "./crypto": "./src/crypto/index.js",
+    "./csv": "./src/csv/index.js"
+  }
+}

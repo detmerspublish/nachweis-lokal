@@ -1,0 +1,9 @@
+{
+  "product": "nachweis-lokal",
+  "type": "app",
+  "bundles": ["B-08-nachweis"],
+  "description": "Pruefprotokolle, Checklisten und Nachweise — lokal, nachvollziehbar, revisionssicher",
+  "depends_on": ["@codefabrik/electron-platform", "@codefabrik/app-shared", "@codefabrik/shared", "@codefabrik/ui-shared"],
+  "platforms": ["linux", "windows", "macos"],
+  "license": "GPL-3.0-only"
+}

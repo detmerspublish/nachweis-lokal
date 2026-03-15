@@ -1,0 +1,28 @@
+{
+  "name": "@codefabrik/electron-platform",
+  "version": "0.1.0",
+  "private": true,
+  "license": "GPL-3.0-only",
+  "type": "commonjs",
+  "description": "Shared Electron platform for all Code-Fabrik desktop products",
+  "main": "main.cjs",
+  "exports": {
+    ".": "./main.cjs",
+    "./preload": "./preload.cjs"
+  },
+  "scripts": {
+    "test": "node --test tests/test_*.js"
+  },
+  "dependencies": {
+    "tamper-evident-log": "^0.1.0"
+  },
+  "peerDependencies": {
+    "electron": "^33.0.0",
+    "better-sqlite3": "^11.0.0"
+  },
+  "peerDependenciesMeta": {
+    "better-sqlite3": {
+      "optional": true
+    }
+  }
+}

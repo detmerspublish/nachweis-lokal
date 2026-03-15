@@ -1,0 +1,14 @@
+# Digistore24-Konfiguration fuer Nachweis Lokal
+product_id: 675654
+name: "Nachweis Lokal"
+tagline: "Pruefprotokolle, Checklisten und Nachweise — lokal und revisionssicher"
+description_short: "Desktop-Software fuer Pruefprotokolle und Checklisten mit revisionssicherer Dokumentation."
+description_long: |
+    Nachweis Lokal ist eine Desktop-Software fuer kleine Organisationen,
+    Vereine und Dienstleister mit Dokumentationspflichten. Erstellen Sie
+    Pruefvorlagen, fuehren Sie Pruefungen durch und dokumentieren Sie
+    Ergebnisse revisionssicher mit Hash-Kette. Inklusive PDF-Export,
+    Maengeltracking und wiederkehrenden Pruefungen.
+price: "39.00"
+currency: "EUR"
+thankyou_url: "https://portal.detmers-publish.de/download"

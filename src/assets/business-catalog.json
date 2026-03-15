@@ -1,0 +1,357 @@
+[
+  {
+    "id": "dguv-v3-elektro",
+    "name": "DGUV Vorschrift 3 Elektroprüfung",
+    "description": "Prüfung ortsveränderlicher elektrischer Betriebsmittel nach DGUV V3",
+    "category": "Elektro",
+    "branches": [
+      "alle"
+    ],
+    "interval_days": 180,
+    "itemCount": 8
+  },
+  {
+    "id": "spielgeraete",
+    "name": "Spielgeräteprüfung",
+    "description": "Visuell-taktile Inspektion von Spielgeräten nach DIN EN 1176",
+    "category": "Spielplatz",
+    "branches": [
+      "kita",
+      "verein",
+      "hausverwaltung"
+    ],
+    "interval_days": 90,
+    "itemCount": 9
+  },
+  {
+    "id": "regalpruefung",
+    "name": "Regalprüfung",
+    "description": "Jährliche Prüfung von Lagerregalen nach DIN EN 15635 / DGUV Regel 108-007",
+    "category": "Lager",
+    "branches": [
+      "einzelhandel",
+      "handwerk"
+    ],
+    "interval_days": 365,
+    "itemCount": 9
+  },
+  {
+    "id": "uvv-fahrzeug",
+    "name": "UVV Fahrzeugprüfung",
+    "description": "Jährliche Unfallverhütungsvorschrift-Prüfung für Dienstfahrzeuge nach DGUV V70",
+    "category": "Fahrzeuge",
+    "branches": [
+      "handwerk"
+    ],
+    "interval_days": 365,
+    "itemCount": 10
+  },
+  {
+    "id": "psa-pruefung",
+    "name": "PSA-Prüfung",
+    "description": "Prüfung der Persönlichen Schutzausrüstung nach PSA-Benutzungsverordnung",
+    "category": "Arbeitsschutz",
+    "branches": [
+      "handwerk"
+    ],
+    "interval_days": 365,
+    "itemCount": 8
+  },
+  {
+    "id": "hygiene-kueche",
+    "name": "Hygiene-Kontrolle Küche",
+    "description": "Regelmäßige Hygienekontrolle für Küchen und Gemeinschaftsverpflegung nach HACCP",
+    "category": "Hygiene",
+    "branches": [
+      "gastro",
+      "kita"
+    ],
+    "interval_days": 30,
+    "itemCount": 10
+  },
+  {
+    "id": "gefaehrdungsbeurteilung-buero",
+    "name": "Gefährdungsbeurteilung Büroarbeitsplatz",
+    "description": "Beurteilung der Arbeitsbedingungen an Bildschirmarbeitsplätzen nach ArbStättV",
+    "category": "Arbeitsschutz",
+    "branches": [
+      "buero"
+    ],
+    "interval_days": 365,
+    "itemCount": 9
+  },
+  {
+    "id": "it-serverraum",
+    "name": "IT-Serverraum Kontrolle",
+    "description": "Regelmäßige Kontrolle des Serverraums (physische Sicherheit und Umgebung)",
+    "category": "IT",
+    "branches": [
+      "buero"
+    ],
+    "interval_days": 90,
+    "itemCount": 9
+  },
+  {
+    "id": "aufzugspruefung",
+    "name": "Aufzugsprüfung",
+    "description": "Wiederkehrende Prüfung von Aufzugsanlagen nach BetrSichV (Zwischenprüfung)",
+    "category": "Aufzug",
+    "branches": [
+      "hausverwaltung"
+    ],
+    "interval_days": 730,
+    "itemCount": 10
+  },
+  {
+    "id": "legionellen",
+    "name": "Legionellenprüfung",
+    "description": "Prüfung der Trinkwasseranlage auf Legionellen nach TrinkwV §14b",
+    "category": "Hygiene",
+    "branches": [
+      "hausverwaltung"
+    ],
+    "interval_days": 365,
+    "itemCount": 8
+  },
+  {
+    "id": "tueren-tore",
+    "name": "Kraftbetätigte Türen und Tore",
+    "description": "Jährliche Prüfung kraftbetätigter Fenster, Türen und Tore nach ASR A1.7",
+    "category": "Gebäude",
+    "branches": [
+      "handwerk",
+      "einzelhandel",
+      "hausverwaltung"
+    ],
+    "interval_days": 365,
+    "itemCount": 8
+  },
+  {
+    "id": "werkzeugmaschinen",
+    "name": "Werkzeugmaschinen-Prüfung",
+    "description": "Wiederkehrende Prüfung von Werkzeugmaschinen nach BetrSichV",
+    "category": "Arbeitsmittel",
+    "branches": [
+      "handwerk"
+    ],
+    "interval_days": 365,
+    "itemCount": 9
+  },
+  {
+    "id": "druckbehaelter",
+    "name": "Druckbehälter / Kompressor",
+    "description": "Wiederkehrende Prüfung von Druckbehältern und Kompressoren nach BetrSichV",
+    "category": "Arbeitsmittel",
+    "branches": [
+      "handwerk"
+    ],
+    "interval_days": 730,
+    "itemCount": 8
+  },
+  {
+    "id": "kita-innenraeume",
+    "name": "Kita-Sicherheitscheck Innenräume",
+    "description": "Regelmäßige Sicherheitsprüfung der Innenräume in Kindertagesstätten nach GUV-SI 8017",
+    "category": "Kita",
+    "branches": [
+      "kita"
+    ],
+    "interval_days": 90,
+    "itemCount": 9
+  },
+  {
+    "id": "kita-aussengelaende",
+    "name": "Kita-Sicherheitscheck Außengelände",
+    "description": "Regelmäßige Sicherheitsprüfung des Außengeländes in Kindertagesstätten nach DIN EN 1176",
+    "category": "Kita",
+    "branches": [
+      "kita"
+    ],
+    "interval_days": 30,
+    "itemCount": 8
+  },
+  {
+    "id": "turngeraete-sporthalle",
+    "name": "Turngeräte / Sporthalle",
+    "description": "Jährliche Prüfung von Turngeräten und Sporthallenausstattung nach DIN EN 913",
+    "category": "Sport",
+    "branches": [
+      "verein",
+      "kita"
+    ],
+    "interval_days": 365,
+    "itemCount": 9
+  },
+  {
+    "id": "werkraum-labor",
+    "name": "Werkraum / Labor (Schule)",
+    "description": "Prüfung von Werkräumen und Laboren in Schulen nach GUV-SR 2001",
+    "category": "Schule",
+    "branches": [
+      "kita"
+    ],
+    "interval_days": 365,
+    "itemCount": 8
+  },
+  {
+    "id": "gastro-hygiene",
+    "name": "Gaststätten-Hygiene (HACCP)",
+    "description": "Hygienekontrolle für Gastronomie und Gemeinschaftsverpflegung nach IfSG/HACCP",
+    "category": "Hygiene",
+    "branches": [
+      "gastro"
+    ],
+    "interval_days": 30,
+    "itemCount": 8
+  },
+  {
+    "id": "fettabscheider",
+    "name": "Fettabscheider-Prüfung",
+    "description": "Wartung und Kontrolle von Fettabscheidern nach DIN 4040-100",
+    "category": "Gebäude",
+    "branches": [
+      "gastro"
+    ],
+    "interval_days": 30,
+    "itemCount": 7
+  },
+  {
+    "id": "klimaanlage-lueftung",
+    "name": "Klima- und Lüftungsanlage",
+    "description": "Prüfung raumlufttechnischer Anlagen nach VDI 6022",
+    "category": "Gebäude",
+    "branches": [
+      "buero",
+      "gastro",
+      "hausverwaltung"
+    ],
+    "interval_days": 365,
+    "itemCount": 8
+  },
+  {
+    "id": "rauchmelder-wohngebaeude",
+    "name": "Rauchmelder-Prüfung (Wohngebäude)",
+    "description": "Jährliche Prüfung der Rauchmelder nach DIN 14676 und Landesbauordnung",
+    "category": "Gebäude",
+    "branches": [
+      "hausverwaltung"
+    ],
+    "interval_days": 365,
+    "itemCount": 8
+  },
+  {
+    "id": "absturzsicherung-dach",
+    "name": "Absturzsicherung / Dachflächen",
+    "description": "Prüfung von Absturzsicherungen auf Dachflächen nach DGUV Regel 112-198",
+    "category": "Gebäude",
+    "branches": [
+      "hausverwaltung",
+      "handwerk"
+    ],
+    "interval_days": 365,
+    "itemCount": 8
+  },
+  {
+    "id": "hebezeuge-krane",
+    "name": "Hebezeuge und Krane",
+    "description": "Wiederkehrende Prüfung von Hebezeugen nach BetrSichV und DGUV Vorschrift 52",
+    "category": "Arbeitsmittel",
+    "branches": [
+      "handwerk"
+    ],
+    "interval_days": 365,
+    "itemCount": 8
+  },
+  {
+    "id": "notstromanlage",
+    "name": "Notstromanlage / NEA",
+    "description": "Prüfung der Netzersatzanlage nach DIN 6280 und VDE 0100-710",
+    "category": "Elektro",
+    "branches": [
+      "hausverwaltung",
+      "buero"
+    ],
+    "interval_days": 90,
+    "itemCount": 8
+  },
+  {
+    "id": "gefahrstofflager",
+    "name": "Gefahrstofflager-Kontrolle",
+    "description": "Prüfung der Gefahrstofflagerung nach GefStoffV und TRGS 510",
+    "category": "Arbeitsschutz",
+    "branches": [
+      "handwerk"
+    ],
+    "interval_days": 90,
+    "itemCount": 9
+  },
+  {
+    "id": "minigolf-anlage",
+    "name": "Minigolf-Anlage",
+    "description": "Prüfung der Minigolf-Bahnen, Hindernisse, Gelände und Ausstattung (Verkehrssicherungspflicht / DIN EN 13899)",
+    "category": "Freizeit",
+    "branches": [
+      "gastro",
+      "verein"
+    ],
+    "interval_days": 90,
+    "itemCount": 17
+  },
+  {
+    "id": "elektrobetrieb-werkzeug",
+    "name": "Elektriker — Werkzeug und Messgeräte",
+    "description": "Regelmäßige Prüfung von Elektrowerkzeug, Messgeräten und PSA für den Elektro-Handwerksbetrieb",
+    "category": "Handwerk",
+    "branches": [
+      "handwerk"
+    ],
+    "interval_days": 180,
+    "itemCount": 15
+  },
+  {
+    "id": "schankanlage",
+    "name": "Schank- und Zapfanlage",
+    "description": "Hygiene- und Sicherheitsprüfung der Schankanlage nach DIN 6650 und Lebensmittelhygiene",
+    "category": "Gastro",
+    "branches": [
+      "gastro"
+    ],
+    "interval_days": 7,
+    "itemCount": 9
+  },
+  {
+    "id": "aussenbereich-terrasse",
+    "name": "Außenbereich / Terrasse / Biergarten",
+    "description": "Sicherheits- und Sauberkeitskontrolle des Außenbereichs (Verkehrssicherungspflicht)",
+    "category": "Gastro",
+    "branches": [
+      "gastro"
+    ],
+    "interval_days": 7,
+    "itemCount": 10
+  },
+  {
+    "id": "saisonstart",
+    "name": "Saisonstart-Checkliste",
+    "description": "Inbetriebnahme nach Winterpause für Saisonbetriebe (Gastro, Freizeit, Freibad)",
+    "category": "Saisonbetrieb",
+    "branches": [
+      "gastro",
+      "verein"
+    ],
+    "interval_days": 365,
+    "itemCount": 11
+  },
+  {
+    "id": "kasse-tse",
+    "name": "Kassenprüfung / TSE",
+    "description": "Prüfung der Registrierkasse und des technischen Sicherheitsmoduls nach KassenSichV / GoBD",
+    "category": "Verwaltung",
+    "branches": [
+      "gastro",
+      "einzelhandel"
+    ],
+    "interval_days": 30,
+    "itemCount": 8
+  }
+]

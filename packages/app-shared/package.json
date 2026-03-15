@@ -1,0 +1,19 @@
+{
+  "name": "@codefabrik/app-shared",
+  "version": "0.2.0",
+  "private": true,
+  "license": "GPL-3.0-only",
+  "type": "module",
+  "description": "Shared Svelte components and DB helpers for Apps",
+  "exports": {
+    "./components": "./src/components/index.js",
+    "./db": "./src/db/index.js",
+    "./license": "./src/license/index.js"
+  },
+  "dependencies": {
+    "@codefabrik/shared": "workspace:*"
+  },
+  "peerDependencies": {
+    "svelte": "^5.0.0"
+  }
+}
