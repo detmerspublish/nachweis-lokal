@@ -1,0 +1,12 @@
+{
+  "name": "@codefabrik/ui-shared",
+  "version": "0.1.0",
+  "license": "GPL-3.0-only",
+  "type": "module",
+  "exports": {
+    "./components": "./src/components/index.js"
+  },
+  "peerDependencies": {
+    "svelte": "^5.0.0"
+  }
+}

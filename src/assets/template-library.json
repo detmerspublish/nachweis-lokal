@@ -1,0 +1,720 @@
+[
+  {
+    "id": "brandschutz",
+    "name": "Brandschutz-Begehung",
+    "description": "Jährliche Brandschutz-Begehung nach ASR A2.2",
+    "category": "Sicherheit",
+    "branches": ["alle"],
+    "tier": "basis",
+    "interval_days": 365,
+    "items": [
+      { "label": "Flucht- und Rettungswege frei und gekennzeichnet?", "hint": "Breite mind. 1,20 m, keine Versperrungen", "required": true },
+      { "label": "Feuerlöscher vorhanden und geprüft?", "hint": "Prüfdatum < 2 Jahre, Plombierung intakt", "required": true },
+      { "label": "Brandmeldeanlage funktionsfähig?", "hint": "Letzte Wartung prüfen", "required": true },
+      { "label": "Brandschutztüren schließen selbsttätig?", "hint": "Keine Verkeimung, Dichtungen intakt", "required": true },
+      { "label": "Elektrische Anlagen augenscheinlich in Ordnung?", "hint": "Keine sichtbaren Schäden, lose Kabel", "required": true },
+      { "label": "Flucht- und Rettungsplan aktuell und ausgehängt?", "hint": "An jedem Stockwerk, aktuelles Datum", "required": true },
+      { "label": "Rauchmelder vorhanden und funktionsfähig?", "hint": "Testknopf drücken, Batterie prüfen", "required": true },
+      { "label": "Sammelplatz gekennzeichnet und bekannt?", "required": false }
+    ]
+  },
+  {
+    "id": "dguv-v3-elektro",
+    "name": "DGUV Vorschrift 3 Elektroprüfung",
+    "description": "Prüfung ortsveränderlicher elektrischer Betriebsmittel nach DGUV V3",
+    "category": "Elektro",
+    "branches": ["alle"],
+    "tier": "business",
+    "interval_days": 180,
+    "items": [
+      { "label": "Sichtprüfung Anschlussleitung (Beschädigung, Knickstellen)?", "required": true },
+      { "label": "Sichtprüfung Stecker (Risse, verbogene Kontakte)?", "required": true },
+      { "label": "Sichtprüfung Gehäuse (Bruchstellen, fehlende Teile)?", "required": true },
+      { "label": "Schutzleiter-Widerstand <= 0,3 Ohm?", "hint": "Messgerät verwenden, Grenzwert 0,3 Ohm", "required": true },
+      { "label": "Isolationswiderstand >= 1 MOhm?", "hint": "Messgerät verwenden, Grenzwert 1 MOhm", "required": true },
+      { "label": "Ableitstrom im Toleranzbereich?", "hint": "Grenzwert je nach Geräteklasse", "required": true },
+      { "label": "Funktionsprüfung erfolgreich?", "hint": "Gerät einschalten, Grundfunktion testen", "required": true },
+      { "label": "Prüfplakette angebracht?", "hint": "Nächster Prüftermin vermerken", "required": false }
+    ]
+  },
+  {
+    "id": "spielgeraete",
+    "name": "Spielgeräteprüfung",
+    "description": "Visuell-taktile Inspektion von Spielgeräten nach DIN EN 1176",
+    "category": "Spielplatz",
+    "branches": ["kita", "verein", "hausverwaltung"],
+    "tier": "business",
+    "interval_days": 90,
+    "items": [
+      { "label": "Fundamente und Verankerungen stabil?", "hint": "Keine Auswaschungen, fester Sitz", "required": true },
+      { "label": "Verbindungselemente (Schrauben, Bolzen) fest?", "hint": "Handfest prüfen, keine fehlenden Teile", "required": true },
+      { "label": "Holzteile ohne Risse, Splitter oder Fäulnis?", "required": true },
+      { "label": "Metallteile ohne Rost oder scharfe Kanten?", "required": true },
+      { "label": "Ketten und Seile intakt (Verschleiß < 20%)?", "required": true },
+      { "label": "Fallschutz ausreichend und intakt?", "hint": "Fallhöhe prüfen, Untergrund weich genug", "required": true },
+      { "label": "Fangstellen und Einklemmgefahren ausgeschlossen?", "hint": "Öffnungen 89-230 mm = Kopffangstelle", "required": true },
+      { "label": "Sauberkeit (kein Glas, Müll, Tierkot)?", "required": true },
+      { "label": "Beschilderung vorhanden und lesbar?", "required": false }
+    ]
+  },
+  {
+    "id": "arbeitsmittel-leitern",
+    "name": "Prüfung Leitern und Tritte",
+    "description": "Wiederkehrende Prüfung von Leitern und Tritten nach BetrSichV",
+    "category": "Arbeitsmittel",
+    "branches": ["handwerk", "hausverwaltung", "alle"],
+    "tier": "basis",
+    "interval_days": 365,
+    "items": [
+      { "label": "Typenschild vorhanden und lesbar?", "required": true },
+      { "label": "Holme/Wangen ohne Verformung oder Risse?", "required": true },
+      { "label": "Sprossen/Stufen fest und unbeschädigt?", "required": true },
+      { "label": "Gelenkverbindungen leichtgängig und arretierbar?", "hint": "Nur bei Gelenkleitern", "required": false },
+      { "label": "Rutschhemmende Füße vorhanden und intakt?", "required": true },
+      { "label": "Sicherungshaken / Spreizsperre funktionsfähig?", "required": true },
+      { "label": "Maximale Belastung nicht überschritten?", "hint": "Typenschild prüfen", "required": true }
+    ]
+  },
+  {
+    "id": "erste-hilfe",
+    "name": "Erste-Hilfe-Ausstattung",
+    "description": "Prüfung der Erste-Hilfe-Materialien nach ASR A4.3",
+    "category": "Sicherheit",
+    "branches": ["alle"],
+    "tier": "basis",
+    "interval_days": 90,
+    "items": [
+      { "label": "Verbandkasten vorhanden und zugänglich?", "hint": "Standort gekennzeichnet (weisses Kreuz auf grünem Grund)", "required": true },
+      { "label": "Inhalt vollständig (nach DIN 13157 / DIN 13169)?", "hint": "Verbrauchte Materialien ersetzen", "required": true },
+      { "label": "Verfallsdaten aller Materialien gültig?", "required": true },
+      { "label": "Rettungsdecke vorhanden?", "required": true },
+      { "label": "Erste-Hilfe-Anleitung beigelegt?", "required": true },
+      { "label": "Aushang Ersthelfer und Notrufnummern aktuell?", "hint": "Name, Telefon, Standort der Ersthelfer", "required": true },
+      { "label": "Defibrillator (AED) vorhanden und einsatzbereit?", "hint": "Nur wenn vorhanden, Batterie und Pads prüfen", "required": false }
+    ]
+  },
+  {
+    "id": "regalpruefung",
+    "name": "Regalprüfung",
+    "description": "Jährliche Prüfung von Lagerregalen nach DIN EN 15635 / DGUV Regel 108-007",
+    "category": "Lager",
+    "branches": ["einzelhandel", "handwerk"],
+    "tier": "business",
+    "interval_days": 365,
+    "items": [
+      { "label": "Standsicherheit gegeben (lotrecht, kein Kippen)?", "hint": "Sichtprüfung und ggf. Wasserwaage", "required": true },
+      { "label": "Bodenverankerung fest und vollständig?", "hint": "Alle Dübel/Schrauben vorhanden und fest", "required": true },
+      { "label": "Stützen ohne Verformung oder Beschädigung?", "hint": "Verbiegung > 3 mm = Austausch nötig", "required": true },
+      { "label": "Traverse ohne Verformung, Haken eingerastet?", "hint": "Sicherungsstifte prüfen", "required": true },
+      { "label": "Fachböden unbeschädigt und korrekt eingelegt?", "required": true },
+      { "label": "Maximale Fachlast nicht überschritten?", "hint": "Belastungsschild prüfen", "required": true },
+      { "label": "Anfahrschutz vorhanden und intakt?", "hint": "Bei Regalen im Fahrverkehr", "required": false },
+      { "label": "Belastungsschild vorhanden und lesbar?", "hint": "Angaben zu Feld-/Fachlast", "required": true },
+      { "label": "Freiraum zu Wänden und anderen Regalen ausreichend?", "required": false }
+    ]
+  },
+  {
+    "id": "uvv-fahrzeug",
+    "name": "UVV Fahrzeugprüfung",
+    "description": "Jährliche Unfallverhütungsvorschrift-Prüfung für Dienstfahrzeuge nach DGUV V70",
+    "category": "Fahrzeuge",
+    "branches": ["handwerk"],
+    "tier": "business",
+    "interval_days": 365,
+    "items": [
+      { "label": "Beleuchtung vollständig und funktionsfähig?", "hint": "Abblendlicht, Fernlicht, Blinker, Bremslicht, Rückfahrlicht", "required": true },
+      { "label": "Bremsen funktionsfähig (Betriebs- und Feststellbremse)?", "required": true },
+      { "label": "Reifen in ordnungsgemäßem Zustand?", "hint": "Mindestprofiltiefe 1,6 mm, keine Beschädigungen", "required": true },
+      { "label": "Lenkung leichtgängig und ohne Spiel?", "required": true },
+      { "label": "Sicherheitsgurte vorhanden und funktionsfähig?", "required": true },
+      { "label": "Scheiben unbeschädigt, Scheibenwischer funktionsfähig?", "required": true },
+      { "label": "Flüssigkeitsstände geprüft (Öl, Kühlmittel, Bremsfl.)?", "required": true },
+      { "label": "Warndreieck, Warnweste, Verbandkasten vorhanden?", "required": true },
+      { "label": "Fahrgestellnummer und Kennzeichen stimmen überein?", "required": true },
+      { "label": "Nächster HU/AU-Termin noch gültig?", "hint": "TÜV-Plakette prüfen", "required": true }
+    ]
+  },
+  {
+    "id": "psa-pruefung",
+    "name": "PSA-Prüfung",
+    "description": "Prüfung der Persönlichen Schutzausrüstung nach PSA-Benutzungsverordnung",
+    "category": "Arbeitsschutz",
+    "branches": ["handwerk"],
+    "tier": "business",
+    "interval_days": 365,
+    "items": [
+      { "label": "Schutzhelm unbeschädigt, Alterung im Rahmen?", "hint": "Thermoplaste max. 4 Jahre, Duroplaste max. 8 Jahre", "required": true },
+      { "label": "Schutzbrille ohne Kratzer, Bügelspannung in Ordnung?", "required": true },
+      { "label": "Gehörschutz vorhanden und funktionsfähig?", "hint": "Kapselgehörschutz: Dichtung und Bügel prüfen", "required": false },
+      { "label": "Schutzhandschuhe unbeschädigt, Material passend?", "hint": "Schnittschutz, Chemikalienschutz je nach Einsatz", "required": true },
+      { "label": "Sicherheitsschuhe in ordnungsgemäßem Zustand?", "hint": "Sohle, Zehenkappe, Schaft prüfen", "required": true },
+      { "label": "Warnweste/Warnkleidung sauber und reflektierend?", "required": false },
+      { "label": "Auffanggurt (PSAgA) geprüft und innerhalb Nutzungsdauer?", "hint": "Nur bei Höhenarbeit. Nähte, Karabiner, Gurte prüfen", "required": false },
+      { "label": "Atemschutz vorhanden und Filter aktuell?", "hint": "Nur bei Bedarf. Verfallsdatum Filter prüfen", "required": false }
+    ]
+  },
+  {
+    "id": "hygiene-kueche",
+    "name": "Hygiene-Kontrolle Küche",
+    "description": "Regelmäßige Hygienekontrolle für Küchen und Gemeinschaftsverpflegung nach HACCP",
+    "category": "Hygiene",
+    "branches": ["gastro", "kita"],
+    "tier": "business",
+    "interval_days": 30,
+    "items": [
+      { "label": "Arbeitsflächen sauber und desinfiziert?", "required": true },
+      { "label": "Kühlschranktemperatur <= 7 Grad Celsius?", "hint": "Thermometer ablesen und dokumentieren", "required": true },
+      { "label": "Tiefkühltemperatur <= -18 Grad Celsius?", "hint": "Thermometer ablesen und dokumentieren", "required": true },
+      { "label": "Handwaschbecken mit Seife und Einwegtüchern ausgestattet?", "required": true },
+      { "label": "Lebensmittel korrekt gelagert (FIFO-Prinzip)?", "hint": "First In, First Out — Älteres vorne", "required": true },
+      { "label": "Keine abgelaufenen Lebensmittel vorhanden?", "required": true },
+      { "label": "Abfallbehälter geleert und gereinigt?", "required": true },
+      { "label": "Schädlingsbefall ausgeschlossen?", "hint": "Keine Spuren von Nagern, Insekten oder Schimmel", "required": true },
+      { "label": "Personalkleidung sauber, Haarnetz/Kopfbedeckung getragen?", "required": true },
+      { "label": "Reinigungsplan aktuell und eingehalten?", "required": true }
+    ]
+  },
+  {
+    "id": "gefaehrdungsbeurteilung-buero",
+    "name": "Gefährdungsbeurteilung Büroarbeitsplatz",
+    "description": "Beurteilung der Arbeitsbedingungen an Bildschirmarbeitsplätzen nach ArbStättV",
+    "category": "Arbeitsschutz",
+    "branches": ["buero"],
+    "tier": "business",
+    "interval_days": 365,
+    "items": [
+      { "label": "Bildschirm flimmerfrei und ausreichend groß?", "hint": "Mind. 22 Zoll, obere Bildschirmkante auf Augenhöhe", "required": true },
+      { "label": "Tastatur und Maus ergonomisch angeordnet?", "hint": "Unterarme waagerecht, Handgelenke gerade", "required": true },
+      { "label": "Stuhl höhenverstellbar und ergonomisch eingestellt?", "hint": "Füße flach am Boden, Oberschenkel waagerecht", "required": true },
+      { "label": "Schreibtischfläche ausreichend (mind. 160 x 80 cm)?", "required": true },
+      { "label": "Beleuchtung ausreichend und blendfrei?", "hint": "Mind. 500 Lux, keine Reflexionen auf Bildschirm", "required": true },
+      { "label": "Raumtemperatur im Behaglichkeitsbereich (20-26 Grad)?", "required": true },
+      { "label": "Lärmpegel angemessen (< 55 dB für geistige Arbeit)?", "required": false },
+      { "label": "Stolperfallen und Kabelgewirr beseitigt?", "required": true },
+      { "label": "Bildschirmpausen möglich (5 Min. pro Stunde)?", "required": true }
+    ]
+  },
+  {
+    "id": "sicherheitsunterweisung",
+    "name": "Sicherheitsunterweisung",
+    "description": "Jährliche Sicherheitsunterweisung nach ArbSchG §12 und DGUV Vorschrift 1",
+    "category": "Arbeitsschutz",
+    "branches": ["alle"],
+    "tier": "basis",
+    "interval_days": 365,
+    "items": [
+      { "label": "Allgemeine Gefahren am Arbeitsplatz besprochen?", "required": true },
+      { "label": "Flucht- und Rettungswege bekannt gemacht?", "hint": "Sammelplatz, Notausgänge zeigen", "required": true },
+      { "label": "Brandschutzordnung erläutert?", "hint": "Verhalten im Brandfall, Feuerlöscherstandorte", "required": true },
+      { "label": "Erste-Hilfe-Einrichtungen und Ersthelfer benannt?", "required": true },
+      { "label": "Persönliche Schutzausrüstung erläutert?", "hint": "Welche PSA wann tragen", "required": false },
+      { "label": "Umgang mit Gefahrstoffen besprochen?", "hint": "Nur wenn relevant für den Arbeitsplatz", "required": false },
+      { "label": "Ergonomie am Arbeitsplatz thematisiert?", "required": false },
+      { "label": "Meldepflicht bei Unfällen und Beinahe-Unfällen erläutert?", "required": true },
+      { "label": "Teilnehmerliste unterschrieben?", "hint": "Alle Anwesenden müssen unterschreiben", "required": true }
+    ]
+  },
+  {
+    "id": "it-serverraum",
+    "name": "IT-Serverraum Kontrolle",
+    "description": "Regelmäßige Kontrolle des Serverraums (physische Sicherheit und Umgebung)",
+    "category": "IT",
+    "branches": ["buero"],
+    "tier": "business",
+    "interval_days": 90,
+    "items": [
+      { "label": "Zutrittskontrolle funktionsfähig?", "hint": "Schloss, Kartenleser oder Code", "required": true },
+      { "label": "Raumtemperatur im Sollbereich (18-25 Grad)?", "hint": "Klimaanlage prüfen, Thermometer ablesen", "required": true },
+      { "label": "Luftfeuchtigkeit im Sollbereich (40-60%)?", "required": false },
+      { "label": "USV (unterbrechungsfreie Stromversorgung) funktionsfähig?", "hint": "Status-LEDs prüfen, Batterie-Alter beachten", "required": true },
+      { "label": "Rauchmelder/Brandmelder vorhanden und aktiv?", "required": true },
+      { "label": "Kabelmanagement ordentlich (keine losen Kabel)?", "required": true },
+      { "label": "Backup-Medien vorhanden und aktuell?", "hint": "Letzte Sicherung prüfen", "required": true },
+      { "label": "Keine unbefugten Gegenstände im Raum?", "hint": "Kartons, Papier, brennbare Materialien", "required": true },
+      { "label": "Notfall-Dokumentation aktuell und zugänglich?", "hint": "Kontaktlisten, Recovery-Anleitungen", "required": true }
+    ]
+  },
+  {
+    "id": "aufzugspruefung",
+    "name": "Aufzugsprüfung",
+    "description": "Wiederkehrende Prüfung von Aufzugsanlagen nach BetrSichV (Zwischenprüfung)",
+    "category": "Aufzug",
+    "branches": ["hausverwaltung"],
+    "tier": "business",
+    "interval_days": 730,
+    "items": [
+      { "label": "Türen schließen und verriegeln korrekt?", "hint": "Automatik- und Handbetrieb prüfen", "required": true },
+      { "label": "Notrufeinrichtung funktionsfähig?", "hint": "Notruf auslösen und Verbindung prüfen", "required": true },
+      { "label": "Beleuchtung in Kabine und Schacht ausreichend?", "required": true },
+      { "label": "Haltegenauigkeit an allen Haltestellen?", "hint": "Max. +/- 20 mm Abweichung", "required": true },
+      { "label": "Fahrkorb-Innenschutz (Spiegel, Handlauf) intakt?", "required": true },
+      { "label": "Tragseile/Tragmittel ohne sichtbare Schäden?", "hint": "Drahtbrüche, Korrosion, Abrieb", "required": true },
+      { "label": "Sicherheitseinrichtungen (Fangvorrichtung, Puffer) vorhanden?", "required": true },
+      { "label": "Maschinenraum sauber und zugänglich?", "hint": "Kein Fremdlager, Beleuchtung funktionsfähig", "required": true },
+      { "label": "Wartungsbuch / Prüfbuch aktuell geführt?", "required": true },
+      { "label": "Nächster Prüftermin (ZÜS) vermerkt?", "hint": "Zugelassene Überwachungsstelle", "required": true }
+    ]
+  },
+  {
+    "id": "legionellen",
+    "name": "Legionellenprüfung",
+    "description": "Prüfung der Trinkwasseranlage auf Legionellen nach TrinkwV §14b",
+    "category": "Hygiene",
+    "branches": ["hausverwaltung"],
+    "tier": "business",
+    "interval_days": 365,
+    "items": [
+      { "label": "Warmwassertemperatur am Austritt >= 60 Grad?", "hint": "Am Boiler/Speicher messen", "required": true },
+      { "label": "Kaltwassertemperatur <= 25 Grad?", "hint": "An der entferntesten Entnahmestelle messen", "required": true },
+      { "label": "Zirkulation funktionsfähig (Rücklauf >= 55 Grad)?", "required": true },
+      { "label": "Probenentnahme an vorgeschriebenen Stellen durchgeführt?", "hint": "Entfernteste Entnahmestelle + Warmwasseraustritt Speicher", "required": true },
+      { "label": "Selten genutzte Leitungen identifiziert und gespült?", "hint": "Stagnation > 72h vermeiden", "required": true },
+      { "label": "Totleitungen (stillgelegte Anschlüsse) zurückgebaut?", "required": true },
+      { "label": "Wartungsprotokoll der Trinkwasseranlage aktuell?", "required": true },
+      { "label": "Laborbefund des letzten Jahres liegt vor?", "hint": "Technischer Maßnahmewert: 100 KBE/100 ml", "required": true }
+    ]
+  },
+  {
+    "id": "fluchtweg-pruefung",
+    "name": "Fluchtweg- und Notausgang-Prüfung",
+    "description": "Halbjährliche Prüfung der Flucht- und Rettungswege nach ASR A2.3",
+    "category": "Sicherheit",
+    "branches": ["alle"],
+    "tier": "basis",
+    "interval_days": 180,
+    "items": [
+      { "label": "Fluchttüren öffnen in Fluchtrichtung und ohne Schlüssel?", "hint": "Panikschloss/Paniktür prüfen", "required": true },
+      { "label": "Fluchtwege frei von Hindernissen und Lagergut?", "hint": "Mindestbreite 1,20 m eingehalten", "required": true },
+      { "label": "Sicherheitsbeleuchtung / Notbeleuchtung funktionsfähig?", "hint": "Test: Hauptbeleuchtung abschalten", "required": true },
+      { "label": "Rettungszeichen (Pfeile, Notausgang) vollständig und sichtbar?", "hint": "Nachleuchtend oder beleuchtet", "required": true },
+      { "label": "Sammelplatz gekennzeichnet und zugänglich?", "required": true },
+      { "label": "Flucht- und Rettungsplan aktuell und ausgehängt?", "hint": "Mindestens an jeder Etage, max. 3 Jahre alt", "required": true },
+      { "label": "Treppenräume frei und Türen selbstschließend?", "hint": "Keine Keile, keine offenstehenden Brandschutztüren", "required": true },
+      { "label": "Aussenbereiche der Fluchttüren frei zugänglich?", "hint": "Keine parkenden Fahrzeuge, keine Absperrungen", "required": true }
+    ]
+  },
+  {
+    "id": "tueren-tore",
+    "name": "Kraftbetätigte Türen und Tore",
+    "description": "Jährliche Prüfung kraftbetätigter Fenster, Türen und Tore nach ASR A1.7",
+    "category": "Gebäude",
+    "branches": ["handwerk", "einzelhandel", "hausverwaltung"],
+    "tier": "business",
+    "interval_days": 365,
+    "items": [
+      { "label": "Schließkraft im Toleranzbereich (max. 150 N)?", "hint": "Kraftmessgerät verwenden", "required": true },
+      { "label": "Lichtschranken und Sensoren funktionsfähig?", "hint": "Hindernis in Schließbereich halten", "required": true },
+      { "label": "Not-Auf-Taster vorhanden und funktionsfähig?", "required": true },
+      { "label": "Quetsch- und Scherstellen gesichert?", "hint": "Fingerschutz an Nebenschließkante", "required": true },
+      { "label": "Notentriegelung von innen möglich?", "required": true },
+      { "label": "Warnkennzeichnung vorhanden?", "hint": "Gelb-schwarze Markierung an Gefahrstellen", "required": true },
+      { "label": "Handbetrieb bei Stromausfall möglich?", "required": true },
+      { "label": "Seilzüge, Federn und Gegengewichte intakt?", "hint": "Sichtprüfung auf Verschleiß und Korrosion", "required": true }
+    ]
+  },
+  {
+    "id": "werkzeugmaschinen",
+    "name": "Werkzeugmaschinen-Prüfung",
+    "description": "Wiederkehrende Prüfung von Werkzeugmaschinen nach BetrSichV",
+    "category": "Arbeitsmittel",
+    "branches": ["handwerk"],
+    "tier": "business",
+    "interval_days": 365,
+    "items": [
+      { "label": "Schutzeinrichtungen (Verdeckungen, Hauben) vorhanden und intakt?", "required": true },
+      { "label": "Not-Aus-Schalter funktionsfähig und zugänglich?", "required": true },
+      { "label": "Elektrische Anschlüsse und Kabel unbeschädigt?", "required": true },
+      { "label": "Spannvorrichtungen funktionsfähig?", "required": true },
+      { "label": "Kühlmittel-/Schmiermittelversorgung in Ordnung?", "required": false },
+      { "label": "Absauganlage funktionsfähig?", "hint": "Nur bei Staubentwicklung (Holz, Metall)", "required": false },
+      { "label": "Standfestigkeit gegeben, Vibration im Normalbereich?", "required": true },
+      { "label": "Bedienungsanleitung am Arbeitsplatz vorhanden?", "required": true },
+      { "label": "Prüfplakette angebracht und aktuell?", "required": false }
+    ]
+  },
+  {
+    "id": "druckbehaelter",
+    "name": "Druckbehälter / Kompressor",
+    "description": "Wiederkehrende Prüfung von Druckbehältern und Kompressoren nach BetrSichV",
+    "category": "Arbeitsmittel",
+    "branches": ["handwerk"],
+    "tier": "business",
+    "interval_days": 730,
+    "items": [
+      { "label": "Sicherheitsventil vorhanden und funktionsfähig?", "hint": "Ansprechdruck prüfen", "required": true },
+      { "label": "Manometer funktionsfähig und ablesbar?", "required": true },
+      { "label": "Druckbehälter augenscheinlich ohne Korrosion oder Risse?", "required": true },
+      { "label": "Kondensat regelmäßig abgelassen?", "hint": "Ablasshahn prüfen", "required": true },
+      { "label": "Anschlüsse und Leitungen dicht?", "required": true },
+      { "label": "Druckschalter schaltet bei Maximaldruck ab?", "required": true },
+      { "label": "Aufstellort belüftet und frostsicher?", "required": true },
+      { "label": "Prüfbuch / Prüfbescheinigung vorhanden?", "required": true }
+    ]
+  },
+  {
+    "id": "kita-innenraeume",
+    "name": "Kita-Sicherheitscheck Innenräume",
+    "description": "Regelmäßige Sicherheitsprüfung der Innenräume in Kindertagesstätten nach GUV-SI 8017",
+    "category": "Kita",
+    "branches": ["kita"],
+    "tier": "business",
+    "interval_days": 90,
+    "items": [
+      { "label": "Steckdosen mit Kindersicherung versehen?", "required": true },
+      { "label": "Möbel standsicher und kippsicher befestigt?", "hint": "Regale an der Wand gesichert", "required": true },
+      { "label": "Ecken und Kanten abgerundet oder geschützt?", "required": true },
+      { "label": "Fenster mit Kindersicherung (Griffe, Begrenzung)?", "required": true },
+      { "label": "Treppen mit Schutzgitter gesichert?", "required": true },
+      { "label": "Reinigungsmittel und Medikamente kindersicher verschlossen?", "required": true },
+      { "label": "Bodenbeläge rutschfest und intakt?", "required": true },
+      { "label": "Heizkörper mit Verbrühschutz (max. 43 Grad Oberflächentemp.)?", "required": true },
+      { "label": "Rauchmelder in allen Räumen funktionsfähig?", "required": true }
+    ]
+  },
+  {
+    "id": "kita-aussengelaende",
+    "name": "Kita-Sicherheitscheck Außengelände",
+    "description": "Regelmäßige Sicherheitsprüfung des Außengeländes in Kindertagesstätten nach DIN EN 1176",
+    "category": "Kita",
+    "branches": ["kita"],
+    "tier": "business",
+    "interval_days": 30,
+    "items": [
+      { "label": "Zaun/Einfriedung intakt und kindersicher (mind. 1 m)?", "required": true },
+      { "label": "Tore und Pforten kindersicher verschließbar?", "required": true },
+      { "label": "Spielgeräte augenscheinlich unbeschädigt?", "hint": "Detailprüfung über separate Checkliste Spielgeräte", "required": true },
+      { "label": "Fallschutzbereiche unter Geräten intakt?", "hint": "Sand, Rindenmulch, Fallschutzplatten", "required": true },
+      { "label": "Giftpflanzen im Außengelände ausgeschlossen?", "hint": "Eibe, Goldregen, Fingerhut, Engelstrompete", "required": true },
+      { "label": "Sandkasten sauber (kein Tierkot, Müll, Scherben)?", "required": true },
+      { "label": "Wasserstellen gesichert?", "hint": "Regentonnen abgedeckt, Teiche eingezäunt", "required": true },
+      { "label": "Oberflächen frei von Stolperfallen?", "required": true }
+    ]
+  },
+  {
+    "id": "turngeraete-sporthalle",
+    "name": "Turngeräte / Sporthalle",
+    "description": "Jährliche Prüfung von Turngeräten und Sporthallenausstattung nach DIN EN 913",
+    "category": "Sport",
+    "branches": ["verein", "kita"],
+    "tier": "business",
+    "interval_days": 365,
+    "items": [
+      { "label": "Wandbefestigungen von Sprossenwänden, Ringen etc. fest?", "required": true },
+      { "label": "Turnmatten ausreichend und in gutem Zustand?", "hint": "Keine Risse, Verformungen oder Verhärtungen", "required": true },
+      { "label": "Reck, Barren, Schwebebalken standsicher?", "required": true },
+      { "label": "Seile und Taue ohne Verschleiß oder Bruchstellen?", "required": true },
+      { "label": "Bodenbelag rutschfest und intakt?", "required": true },
+      { "label": "Hallenbeleuchtung ausreichend und splittergeschützt?", "required": true },
+      { "label": "Erste-Hilfe-Ausstattung vorhanden und vollständig?", "required": true },
+      { "label": "Geräteraum aufgeräumt, Geräte sicher gelagert?", "required": true },
+      { "label": "Basketballkörbe / Tore standsicher und verriegelt?", "hint": "Freistehende Tore müssen kippsicher verankert sein", "required": true }
+    ]
+  },
+  {
+    "id": "werkraum-labor",
+    "name": "Werkraum / Labor (Schule)",
+    "description": "Prüfung von Werkräumen und Laboren in Schulen nach GUV-SR 2001",
+    "category": "Schule",
+    "branches": ["kita"],
+    "tier": "business",
+    "interval_days": 365,
+    "items": [
+      { "label": "Not-Aus-Schalter für alle Maschinen funktionsfähig?", "required": true },
+      { "label": "Schutzeinrichtungen an Maschinen vollständig?", "required": true },
+      { "label": "Absauganlage funktionsfähig (Staub, Dämpfe)?", "required": true },
+      { "label": "Schutzbrillensatz vollständig und unbeschädigt?", "required": true },
+      { "label": "Chemikalien korrekt gelagert und beschriftet?", "hint": "Gefahrstoffschrank, Sicherheitsdatenblätter", "required": true },
+      { "label": "Augendusche / Notdusche funktionsfähig?", "hint": "Wasser laufen lassen, Funktion prüfen", "required": true },
+      { "label": "Erste-Hilfe-Kasten vorhanden und vollständig?", "required": true },
+      { "label": "Betriebsanweisungen ausgehängt und aktuell?", "required": true }
+    ]
+  },
+  {
+    "id": "gastro-hygiene",
+    "name": "Gaststätten-Hygiene (HACCP)",
+    "description": "Hygienekontrolle für Gastronomie und Gemeinschaftsverpflegung nach IfSG/HACCP",
+    "category": "Hygiene",
+    "branches": ["gastro"],
+    "tier": "business",
+    "interval_days": 30,
+    "items": [
+      { "label": "Personalschulung nach IfSG §43 dokumentiert?", "hint": "Erstbelehrung Gesundheitsamt + jährliche Folgebelehrung", "required": true },
+      { "label": "Wareneingangskontrolle durchgeführt (Temperatur, MHD)?", "required": true },
+      { "label": "Kühlkette durchgehend eingehalten?", "hint": "Kühlprotokolle prüfen", "required": true },
+      { "label": "Trennung rein/unrein eingehalten?", "hint": "Rohe/gegarte Lebensmittel getrennt", "required": true },
+      { "label": "Spülmaschine erreicht 65 Grad im Klarspülgang?", "required": true },
+      { "label": "Schädlingsmonitoring aktuell?", "hint": "Köderstationen, Insektenfallen prüfen", "required": true },
+      { "label": "Rückverfolgbarkeit der Lebensmittel gewährleistet?", "hint": "Lieferscheine, Chargen dokumentiert", "required": true },
+      { "label": "Reinigungs- und Desinfektionsplan eingehalten?", "required": true }
+    ]
+  },
+  {
+    "id": "fettabscheider",
+    "name": "Fettabscheider-Prüfung",
+    "description": "Wartung und Kontrolle von Fettabscheidern nach DIN 4040-100",
+    "category": "Gebäude",
+    "branches": ["gastro"],
+    "tier": "business",
+    "interval_days": 30,
+    "items": [
+      { "label": "Fettschichtdicke gemessen und dokumentiert?", "hint": "Entleerung bei > 80% Füllstand", "required": true },
+      { "label": "Schlammfang kontrolliert?", "required": true },
+      { "label": "Geruchsverschluss intakt?", "required": true },
+      { "label": "Zu- und Ablauf frei?", "required": true },
+      { "label": "Dichtungen der Abdeckungen intakt?", "required": true },
+      { "label": "Letzte Vollentleerung dokumentiert?", "hint": "Mindestens alle 4 Wochen bis 6 Monate je nach Anlage", "required": true },
+      { "label": "Entsorgungsnachweis vorhanden?", "hint": "Begleitschein des Entsorgungsbetriebs", "required": true }
+    ]
+  },
+  {
+    "id": "klimaanlage-lueftung",
+    "name": "Klima- und Lüftungsanlage",
+    "description": "Prüfung raumlufttechnischer Anlagen nach VDI 6022",
+    "category": "Gebäude",
+    "branches": ["buero", "gastro", "hausverwaltung"],
+    "tier": "business",
+    "interval_days": 365,
+    "items": [
+      { "label": "Luftfilter sauber oder gewechselt?", "hint": "Differenzdruck prüfen", "required": true },
+      { "label": "Wärmetauscher sauber und frei von Biofilm?", "required": true },
+      { "label": "Kondensatwannen sauber und Abfluss frei?", "hint": "Keine stehende Feuchtigkeit", "required": true },
+      { "label": "Luftkanäle augenscheinlich sauber (Revisionsöffnungen)?", "required": true },
+      { "label": "Befeuchter hygienisch einwandfrei?", "hint": "Nur bei Anlagen mit Befeuchtung", "required": false },
+      { "label": "Außenluftansaugung frei von Verunreinigungen?", "hint": "Laub, Vogelkot, Abgase", "required": true },
+      { "label": "Volumenstrom und Temperatur im Sollbereich?", "required": true },
+      { "label": "Hygiene-Erstinspektion oder Folgeinspektion fällig?", "hint": "Erstinspektion alle 2 Jahre, Folgeinspektion alle 3 Jahre", "required": true }
+    ]
+  },
+  {
+    "id": "rauchmelder-wohngebaeude",
+    "name": "Rauchmelder-Prüfung (Wohngebäude)",
+    "description": "Jährliche Prüfung der Rauchmelder nach DIN 14676 und Landesbauordnung",
+    "category": "Gebäude",
+    "branches": ["hausverwaltung"],
+    "tier": "business",
+    "interval_days": 365,
+    "items": [
+      { "label": "Rauchmelder in allen Schlafräumen vorhanden?", "required": true },
+      { "label": "Rauchmelder in allen Fluren (Rettungswege) vorhanden?", "required": true },
+      { "label": "Rauchmelder in Kinderzimmern vorhanden?", "required": true },
+      { "label": "Testknopf gedrückt — Signalton ertönt?", "required": true },
+      { "label": "Raucheintrittsöffnungen frei und sauber?", "hint": "Kein Staub, keine Farbe, keine Abdeckungen", "required": true },
+      { "label": "Mindestabstand zu Wänden eingehalten (50 cm)?", "required": true },
+      { "label": "Keine Hindernisse im Umkreis von 50 cm?", "required": true },
+      { "label": "Batterie-/Geräte-Lebensdauer noch nicht überschritten?", "hint": "Q-Label-Melder: 10 Jahre, Standard: Batterie prüfen", "required": true }
+    ]
+  },
+  {
+    "id": "absturzsicherung-dach",
+    "name": "Absturzsicherung / Dachflächen",
+    "description": "Prüfung von Absturzsicherungen auf Dachflächen nach DGUV Regel 112-198",
+    "category": "Gebäude",
+    "branches": ["hausverwaltung", "handwerk"],
+    "tier": "business",
+    "interval_days": 365,
+    "items": [
+      { "label": "Anschlagpunkte / Sekuranten fest und korrosionsfrei?", "hint": "Drehmoment-Prüfung lt. Herstellerangabe", "required": true },
+      { "label": "Seilsicherungssysteme intakt und geprüft?", "required": true },
+      { "label": "Geländer / Umwehrungen standsicher (min. 1,00 m)?", "required": true },
+      { "label": "Dachrandabsicherung vollständig und unbeschädigt?", "required": true },
+      { "label": "Durchsturzsicherungen an Lichtkuppeln vorhanden?", "hint": "Gitter oder durchsturzsichere Kuppeln", "required": true },
+      { "label": "Zugang zum Dach gesichert (Leiter, Steigleiter, Tür)?", "required": true },
+      { "label": "Dachfläche begehbar und rutschfest?", "hint": "Moos, Laub, Eis entfernen", "required": true },
+      { "label": "Prüfplaketten an Anschlagpunkten aktuell?", "required": true }
+    ]
+  },
+  {
+    "id": "hebezeuge-krane",
+    "name": "Hebezeuge und Krane",
+    "description": "Wiederkehrende Prüfung von Hebezeugen nach BetrSichV und DGUV Vorschrift 52",
+    "category": "Arbeitsmittel",
+    "branches": ["handwerk"],
+    "tier": "business",
+    "interval_days": 365,
+    "items": [
+      { "label": "Tragmittel (Seile, Ketten, Gurte) ohne Verschleiß?", "hint": "Ablegereife nach Herstellerangabe prüfen", "required": true },
+      { "label": "Haken mit Sicherheitsfalle und ohne Aufbiegung?", "required": true },
+      { "label": "Bremsen funktionsfähig (Hub- und Fahrbremse)?", "required": true },
+      { "label": "Endschalter / Überlastsicherung funktionsfähig?", "required": true },
+      { "label": "Steuerung und Bedienelemente funktionsfähig?", "hint": "Alle Fahrbewegungen testen", "required": true },
+      { "label": "Tragfähigkeitskennzeichnung vorhanden und lesbar?", "required": true },
+      { "label": "Schienenlaufbahn / Fahrbahn in Ordnung?", "hint": "Nur bei Laufkranen", "required": false },
+      { "label": "Prüfbuch aktuell geführt?", "required": true }
+    ]
+  },
+  {
+    "id": "notstromanlage",
+    "name": "Notstromanlage / NEA",
+    "description": "Prüfung der Netzersatzanlage nach DIN 6280 und VDE 0100-710",
+    "category": "Elektro",
+    "branches": ["hausverwaltung", "buero"],
+    "tier": "business",
+    "interval_days": 90,
+    "items": [
+      { "label": "Probelauf durchgeführt (mind. 15 Min. unter Last)?", "required": true },
+      { "label": "Starterbatterie geladen und Anschlüsse fest?", "required": true },
+      { "label": "Kraftstoffvorrat ausreichend?", "hint": "Mindestbetriebsdauer nach Anforderung sicherstellen", "required": true },
+      { "label": "Kühlmittelstand und Ölstand in Ordnung?", "required": true },
+      { "label": "Automatische Umschaltung (ATS) funktionsfähig?", "hint": "Netzausfall simulieren und Umschaltzeit prüfen", "required": true },
+      { "label": "Abgasanlage dicht und frei?", "required": true },
+      { "label": "Aufstellraum belüftet und frostfrei?", "required": true },
+      { "label": "Betriebsstundenzähler abgelesen und dokumentiert?", "required": true }
+    ]
+  },
+  {
+    "id": "gefahrstofflager",
+    "name": "Gefahrstofflager-Kontrolle",
+    "description": "Prüfung der Gefahrstofflagerung nach GefStoffV und TRGS 510",
+    "category": "Arbeitsschutz",
+    "branches": ["handwerk"],
+    "tier": "business",
+    "interval_days": 90,
+    "items": [
+      { "label": "Gefahrstoffe in zugelassenen Behältern gelagert?", "required": true },
+      { "label": "Zusammenlagerungsverbote eingehalten?", "hint": "Lagerklassen-Tabelle nach TRGS 510 beachten", "required": true },
+      { "label": "Auffangwannen vorhanden und intakt?", "hint": "10% der Lagermenge oder größtes Gebinde", "required": true },
+      { "label": "Kennzeichnung aller Behälter vollständig (GHS)?", "required": true },
+      { "label": "Sicherheitsdatenblätter vorhanden und zugänglich?", "required": true },
+      { "label": "Lüftung des Lagerraums funktionsfähig?", "required": true },
+      { "label": "Feuerlöscher in Reichweite und geprüft?", "required": true },
+      { "label": "Gefahrstoffverzeichnis aktuell?", "required": true },
+      { "label": "Betriebsanweisung ausgehängt?", "required": true }
+    ]
+  },
+  {
+    "id": "minigolf-anlage",
+    "name": "Minigolf-Anlage",
+    "description": "Prüfung der Minigolf-Bahnen, Hindernisse, Gelände und Ausstattung (Verkehrssicherungspflicht / DIN EN 13899)",
+    "category": "Freizeit",
+    "branches": ["gastro", "verein"],
+    "tier": "business",
+    "interval_days": 90,
+    "items": [
+      { "label": "Bahnen-Belag eben und rissfrei (keine Stolperkanten)?", "required": true },
+      { "label": "Banden/Begrenzungen stabil und ohne scharfe Kanten?", "required": true },
+      { "label": "Hindernisse standsicher befestigt?", "hint": "Wackeln, Kippen, lose Teile prüfen", "required": true },
+      { "label": "Keine Quetsch- oder Einklemmstellen an Hindernissen?", "hint": "Besonders bei beweglichen Teilen (Windmühle etc.)", "required": true },
+      { "label": "Abfluss/Entwässerung der Bahnen funktionsfähig?", "hint": "Kein stehendes Wasser nach Regen", "required": true },
+      { "label": "Schläger in gutem Zustand (Griffe, Köpfe)?", "hint": "Splitter, lose Köpfe, abgenutzte Griffe", "required": true },
+      { "label": "Bälle vollständig und unbeschädigt?", "required": false },
+      { "label": "Beschilderung vorhanden (Spielregeln, Bahnreihenfolge)?", "required": true },
+      { "label": "Beleuchtung der Bahnen funktionsfähig?", "hint": "Nur bei Abendspiel / Schwarzlicht-Anlage", "required": false },
+      { "label": "Bepflanzung/Dekoration sicher (keine herabfallenden Teile)?", "required": true },
+      { "label": "Wege zwischen Bahnen eben und stolperfrei?", "required": true },
+      { "label": "Bäume: sichtbare Schäden, tote Äste, Schieflage?", "hint": "Sichtprüfung vom Boden. Bei Auffälligkeiten an Verpächter/Stadt melden — Datum und Meldung dokumentieren!", "required": true },
+      { "label": "Zäune und Absperrungen intakt?", "required": true },
+      { "label": "Mülleimer vorhanden und geleert?", "required": true },
+      { "label": "Sitzbänke/Mobiliar stabil und ohne Splitter?", "required": true },
+      { "label": "Toiletten/Sanitär sauber und funktionsfähig?", "hint": "Falls auf dem Gelände vorhanden", "required": false },
+      { "label": "Haftungshinweis / Benutzungsordnung ausgehängt?", "required": true }
+    ]
+  },
+  {
+    "id": "elektrobetrieb-werkzeug",
+    "name": "Elektriker — Werkzeug und Messgeräte",
+    "description": "Regelmäßige Prüfung von Elektrowerkzeug, Messgeräten und PSA für den Elektro-Handwerksbetrieb",
+    "category": "Handwerk",
+    "branches": ["handwerk"],
+    "tier": "business",
+    "interval_days": 180,
+    "items": [
+      { "label": "Multimeter/Messgeräte kalibriert und innerhalb Prüffrist?", "hint": "Kalibrierdatum auf dem Gerät oder im Zertifikat prüfen", "required": true },
+      { "label": "Isolationsmessgerät funktionsfähig?", "required": true },
+      { "label": "Spannungsprüfer (Duspol) funktionsfähig?", "hint": "Vor und nach Messung an bekannter Spannung prüfen", "required": true },
+      { "label": "Bohrmaschine/Akkuschrauber: Kabel, Gehäuse, Kohlebürsten?", "hint": "Sichtprüfung auf Beschädigung, Kabelbruch, Risse", "required": true },
+      { "label": "Flex/Winkelschleifer: Schutzhaube, Scheibe, Flansch?", "required": true },
+      { "label": "Lötstation/Heißluft: Kabel, Ablage, Temperaturregelung?", "required": false },
+      { "label": "Verlängerungskabel und Kabeltrommeln unbeschädigt?", "hint": "Vollständig abrollen, Kabel auf Risse/Brüche prüfen", "required": true },
+      { "label": "Leiter/Tritt: Sprossen fest, Gelenke, rutschfeste Füße?", "required": true },
+      { "label": "Sicherungskasten/Prüfkoffer komplett bestückt?", "required": false },
+      { "label": "Isolierte Werkzeuge (VDE) unbeschädigt?", "hint": "Isolierung darf keine Risse, Löcher oder Abschürfungen haben", "required": true },
+      { "label": "Schutzbrille vorhanden und kratzerfreier?", "required": true },
+      { "label": "Isolierhandschuhe geprüft und innerhalb Nutzungsdauer?", "hint": "Aufblastest, Sichtprüfung auf Löcher, Verfallsdatum", "required": true },
+      { "label": "Sicherheitsschuhe in gutem Zustand?", "required": true },
+      { "label": "Erste-Hilfe-Kasten im Fahrzeug vollständig?", "required": true },
+      { "label": "Prüfprotokolle der letzten DGUV V3 Prüfung vorhanden?", "hint": "Für alle ortsveränderlichen Geräte, max. 12 Monate alt", "required": true }
+    ]
+  },
+  {
+    "id": "schankanlage",
+    "name": "Schank- und Zapfanlage",
+    "description": "Hygiene- und Sicherheitsprüfung der Schankanlage nach DIN 6650 und Lebensmittelhygiene",
+    "category": "Gastro",
+    "branches": ["gastro"],
+    "tier": "business",
+    "interval_days": 7,
+    "items": [
+      { "label": "Leitungsreinigung durchgeführt?", "hint": "Alle 7 Tage Pflicht — Reinigungsdatum dokumentieren", "required": true },
+      { "label": "Schankhähne sauber und tropffrei?", "required": true },
+      { "label": "Abtropfschale sauber und Abfluss frei?", "required": true },
+      { "label": "Kühltemperatur Fass/Kühlzelle im Sollbereich (5-8 Grad)?", "hint": "Thermometer ablesen", "required": true },
+      { "label": "CO2-Flasche ausreichend gefüllt?", "hint": "Manometer prüfen, Reserveflasche vorhanden?", "required": true },
+      { "label": "CO2-Druckminderer dicht und korrekt eingestellt?", "required": true },
+      { "label": "Aufstellraum der CO2-Flasche belüftet?", "hint": "CO2 ist schwerer als Luft — Erstickungsgefahr bei Leckage", "required": true },
+      { "label": "Biergläser sauber (keine Fettränder, kein Spülmittelrest)?", "hint": "Nässetest: Wasser muss gleichmäßig ablaufen", "required": true },
+      { "label": "MHD der Fässer geprüft?", "required": true }
+    ]
+  },
+  {
+    "id": "aussenbereich-terrasse",
+    "name": "Außenbereich / Terrasse / Biergarten",
+    "description": "Sicherheits- und Sauberkeitskontrolle des Außenbereichs (Verkehrssicherungspflicht)",
+    "category": "Gastro",
+    "branches": ["gastro"],
+    "tier": "business",
+    "interval_days": 7,
+    "items": [
+      { "label": "Mobiliar stabil und sauber (Stühle, Tische, Bänke)?", "hint": "Wackelnde Beine, Splitter, Verschmutzung", "required": true },
+      { "label": "Sonnenschirme/Markisen standsicher?", "hint": "Fußplatten beschwert, Kurbel funktionsfähig, bei Wind einholen", "required": true },
+      { "label": "Bodenbelag eben und rutschfest?", "hint": "Stolperkanten, lose Platten, Moos bei Nässe", "required": true },
+      { "label": "Beleuchtung Außenbereich funktionsfähig?", "required": true },
+      { "label": "Abfallbehälter geleert und sauber?", "required": true },
+      { "label": "Aschenbecher vorhanden (Raucherbereich)?", "required": false },
+      { "label": "Insektenschutz an der Ausgabe vorhanden?", "hint": "Fliegengitter, Wespenfallen, abgedeckte Speisen", "required": true },
+      { "label": "Spielbereich für Kinder sicher?", "hint": "Nur wenn Spielecke vorhanden — Einsehbarkeit, Absicherung", "required": false },
+      { "label": "Fluchtweg vom Außenbereich frei und erkennbar?", "required": true },
+      { "label": "Hecken/Bepflanzung gepflegt (keine überhängenden Äste)?", "required": false }
+    ]
+  },
+  {
+    "id": "saisonstart",
+    "name": "Saisonstart-Checkliste",
+    "description": "Inbetriebnahme nach Winterpause für Saisonbetriebe (Gastro, Freizeit, Freibad)",
+    "category": "Saisonbetrieb",
+    "branches": ["gastro", "verein"],
+    "tier": "business",
+    "interval_days": 365,
+    "items": [
+      { "label": "Wasserleitungen gespült (mind. 5 Min. alle Entnahmestellen)?", "hint": "Legionellen-Risiko nach Stagnation > 72h — Warmwasser auf 60 Grad", "required": true },
+      { "label": "Warmwasserbereiter hochgeheizt (thermische Desinfektion)?", "hint": "Mind. 70 Grad für 3 Minuten, danach 60 Grad Betriebstemp.", "required": true },
+      { "label": "Elektrogeräte auf Funktion geprüft nach Einlagerung?", "hint": "Kühlgeräte, Kaffeemaschine, Spülmaschine, Kasse", "required": true },
+      { "label": "Kühlgeräte auf Temperatur (mind. 24h vor Erstbestückung)?", "required": true },
+      { "label": "Schankanlage gereinigt und Erstbefüllung durchgeführt?", "required": true },
+      { "label": "Außenbereich / Bahnen von Winterschäden befreit?", "hint": "Frostschäden, Laub, Moos, Unkraut", "required": true },
+      { "label": "Mobiliar aus dem Lager geholt und geprüft?", "required": true },
+      { "label": "Behördliche Genehmigungen aktuell?", "hint": "Gaststättenerlaubnis, Sondernutzung Außenbereich, Musik-Genehmigung", "required": true },
+      { "label": "Versicherungsschutz geprüft und Police aktuell?", "hint": "Betriebshaftpflicht, Inventar", "required": true },
+      { "label": "Erste-Hilfe-Material aufgefüllt und MHD geprüft?", "required": true },
+      { "label": "Personal eingewiesen (Hygiene, Notfälle, Abläufe)?", "hint": "IfSG-Belehrung aktuell?", "required": true }
+    ]
+  },
+  {
+    "id": "kasse-tse",
+    "name": "Kassenprüfung / TSE",
+    "description": "Prüfung der Registrierkasse und des technischen Sicherheitsmoduls nach KassenSichV / GoBD",
+    "category": "Verwaltung",
+    "branches": ["gastro", "einzelhandel"],
+    "tier": "business",
+    "interval_days": 30,
+    "items": [
+      { "label": "TSE-Modul aktiv und funktionsfähig?", "hint": "Status in Kassensoftware prüfen — darf nicht im Ausfallmodus sein", "required": true },
+      { "label": "Tagesabschluss (Z-Bon) wird täglich erstellt und archiviert?", "required": true },
+      { "label": "Elektronisches Aufzeichnungssystem beim Finanzamt gemeldet?", "hint": "Pflicht seit 2025 — Meldung über 'Mein ELSTER'", "required": true },
+      { "label": "Kassenbuch lückenlos geführt?", "hint": "Bareinnahmen, Barausgaben, Privatentnahmen", "required": true },
+      { "label": "Belegausgabepflicht eingehalten (Bon für jeden Verkauf)?", "required": true },
+      { "label": "DSFinV-K-Export möglich (Datenformat für Betriebsprüfung)?", "hint": "In Kassensoftware testen", "required": true },
+      { "label": "Kassensturz: Ist-Bestand = Soll-Bestand?", "required": true },
+      { "label": "Bedienungsanleitung der Kasse verfügbar?", "required": false }
+    ]
+  }
+]

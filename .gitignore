@@ -1,0 +1,12 @@
+node_modules/
+dist/
+release/
+*.AppImage
+*.exe
+*.dmg
+*.blockmap
+*.log
+*.tgz
+.env
+license.json
+mobile-trial.json

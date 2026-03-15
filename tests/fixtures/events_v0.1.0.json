@@ -1,0 +1,162 @@
+[
+  {
+    "id": 1,
+    "type": "AppGestartet",
+    "timestamp": "2026-03-12T05:46:40.492Z",
+    "actor": "app",
+    "version": 1,
+    "data": "{\"version\":\"0.1.0\",\"schema_version\":1}",
+    "hash": "a615f287ef5fd28b5ed4e343eb84a3d4c82a5e884e9a00edce03a647638539a6",
+    "prev_hash": "0"
+  },
+  {
+    "id": 2,
+    "type": "ProfilGespeichert",
+    "timestamp": "2026-03-12T05:46:40.493Z",
+    "actor": "app",
+    "version": 1,
+    "data": "{\"name\":\"Muster GmbH\",\"street\":\"Industriestr. 5\",\"zip\":\"12345\",\"city\":\"Musterstadt\",\"responsible\":\"Max Mustermann\",\"contact_email\":\"info@muster.de\",\"contact_phone\":\"0170-1234567\",\"logo_path\":\"\"}",
+    "hash": "57e12dcfd510cbffa3ad774465d5474786aafd0dd5eb36e1b0fc8dd6fcd40bda",
+    "prev_hash": "a615f287ef5fd28b5ed4e343eb84a3d4c82a5e884e9a00edce03a647638539a6"
+  },
+  {
+    "id": 3,
+    "type": "VorlageAngelegt",
+    "timestamp": "2026-03-12T05:46:40.493Z",
+    "actor": "app",
+    "version": 1,
+    "data": "{\"id\":1,\"name\":\"Brandschutzpruefung\",\"description\":\"Jaehrliche Brandschutzbegehung gemaess Arbeitsschutzgesetz\",\"category\":\"Sicherheit\",\"interval_days\":365}",
+    "hash": "197660a390ae220ecaa649acb19d9d77b8a0c5bdf0faee42c7105e0190644eba",
+    "prev_hash": "57e12dcfd510cbffa3ad774465d5474786aafd0dd5eb36e1b0fc8dd6fcd40bda"
+  },
+  {
+    "id": 4,
+    "type": "VorlageAngelegt",
+    "timestamp": "2026-03-12T05:46:40.493Z",
+    "actor": "app",
+    "version": 1,
+    "data": "{\"id\":2,\"name\":\"Spielplatzkontrolle\",\"description\":\"Woechentliche Sichtpruefung nach DIN EN 1176\",\"category\":\"Kontrolle\",\"interval_days\":7}",
+    "hash": "9eb84db0fa7229c2aa5bb26baeab55aa3b62b09bb851ca27823ac1d9ab4ee507",
+    "prev_hash": "197660a390ae220ecaa649acb19d9d77b8a0c5bdf0faee42c7105e0190644eba"
+  },
+  {
+    "id": 5,
+    "type": "VorlageAngelegt",
+    "timestamp": "2026-03-12T05:46:40.493Z",
+    "actor": "app",
+    "version": 1,
+    "data": "{\"id\":3,\"name\":\"Geraetepruefung DGUV V3\",\"description\":\"Elektrische Betriebsmittel nach DGUV Vorschrift 3\",\"category\":\"Sicherheit\",\"interval_days\":730}",
+    "hash": "c612b2517cdccbe9530ce0a0bb38d0e1abc73a0787ec0347dd68558ca0baa02e",
+    "prev_hash": "9eb84db0fa7229c2aa5bb26baeab55aa3b62b09bb851ca27823ac1d9ab4ee507"
+  },
+  {
+    "id": 6,
+    "type": "PruefpunkteGespeichert",
+    "timestamp": "2026-03-12T05:46:40.493Z",
+    "actor": "app",
+    "version": 1,
+    "data": "{\"template_id\":1,\"count\":5}",
+    "hash": "767fedb6ae076a94b02fdf4d0a1b78e6b78379a999403c0988e1c3f4f3c42b3d",
+    "prev_hash": "c612b2517cdccbe9530ce0a0bb38d0e1abc73a0787ec0347dd68558ca0baa02e"
+  },
+  {
+    "id": 7,
+    "type": "PruefpunkteGespeichert",
+    "timestamp": "2026-03-12T05:46:40.493Z",
+    "actor": "app",
+    "version": 1,
+    "data": "{\"template_id\":2,\"count\":4}",
+    "hash": "60a7e4a6e8abb3ce88dbc266b3604132045e657fbce946e3ecd87c70ab8f416e",
+    "prev_hash": "767fedb6ae076a94b02fdf4d0a1b78e6b78379a999403c0988e1c3f4f3c42b3d"
+  },
+  {
+    "id": 8,
+    "type": "PruefpunkteGespeichert",
+    "timestamp": "2026-03-12T05:46:40.494Z",
+    "actor": "app",
+    "version": 1,
+    "data": "{\"template_id\":3,\"count\":6}",
+    "hash": "d9ef57666ca1eef71f25c37e67d0f44bb5e34b2f21c8724ba9c1d8f187f83ef7",
+    "prev_hash": "60a7e4a6e8abb3ce88dbc266b3604132045e657fbce946e3ecd87c70ab8f416e"
+  },
+  {
+    "id": 9,
+    "type": "ObjektAngelegt",
+    "timestamp": "2026-03-12T05:46:40.494Z",
+    "actor": "app",
+    "version": 1,
+    "data": "{\"id\":1,\"name\":\"Halle A\",\"location\":\"Erdgeschoss links\",\"category\":\"Gebaeude\",\"identifier\":\"GEB-001\"}",
+    "hash": "ddaf4ffed7be5230362f410375ff2824a884b6ed317985fe7885170436ac938c",
+    "prev_hash": "d9ef57666ca1eef71f25c37e67d0f44bb5e34b2f21c8724ba9c1d8f187f83ef7"
+  },
+  {
+    "id": 10,
+    "type": "ObjektAngelegt",
+    "timestamp": "2026-03-12T05:46:40.494Z",
+    "actor": "app",
+    "version": 1,
+    "data": "{\"id\":2,\"name\":\"Spielplatz Lindenweg\",\"location\":\"Lindenweg 12\",\"category\":\"Aussenanlage\",\"identifier\":\"SPL-001\"}",
+    "hash": "5cdcdad802dc0c91938932b52a12812f0aa53d0f57c3ea8f80052679fd9856e3",
+    "prev_hash": "ddaf4ffed7be5230362f410375ff2824a884b6ed317985fe7885170436ac938c"
+  },
+  {
+    "id": 11,
+    "type": "ObjektAngelegt",
+    "timestamp": "2026-03-12T05:46:40.494Z",
+    "actor": "app",
+    "version": 1,
+    "data": "{\"id\":3,\"name\":\"Bohrmaschine Metabo\",\"location\":\"Werkstatt Regal 3\",\"category\":\"Geraet\",\"identifier\":\"EL-042\",\"notes\":\"Seriennr. M-2024-55891\"}",
+    "hash": "89c789fc46c67efb0f741a1ffaa9d205a2d766461a4ae64c396e551348863bf5",
+    "prev_hash": "5cdcdad802dc0c91938932b52a12812f0aa53d0f57c3ea8f80052679fd9856e3"
+  },
+  {
+    "id": 12,
+    "type": "PruefungAngelegt",
+    "timestamp": "2026-03-12T05:46:40.494Z",
+    "actor": "app",
+    "version": 1,
+    "data": "{\"id\":1,\"template_id\":1,\"object_id\":1,\"title\":\"Brandschutz Halle A 2025\",\"inspector\":\"Max Mustermann\",\"inspection_date\":\"2025-11-15\",\"due_date\":\"2026-11-15\",\"status\":\"bestanden\"}",
+    "hash": "93df5fb9a32c5808f9fe33012081b1e7cb7c5938879ac27ed9b2251eb7ea02c1",
+    "prev_hash": "89c789fc46c67efb0f741a1ffaa9d205a2d766461a4ae64c396e551348863bf5"
+  },
+  {
+    "id": 13,
+    "type": "ErgebnisseGespeichert",
+    "timestamp": "2026-03-12T05:46:40.494Z",
+    "actor": "app",
+    "version": 1,
+    "data": "{\"inspection_id\":1,\"count\":5}",
+    "hash": "ed2ba7558eeef0b05f31d97c184407ea9f99bf76d0c1d6b338abe09b949b851e",
+    "prev_hash": "93df5fb9a32c5808f9fe33012081b1e7cb7c5938879ac27ed9b2251eb7ea02c1"
+  },
+  {
+    "id": 14,
+    "type": "PruefungAngelegt",
+    "timestamp": "2026-03-12T05:46:40.494Z",
+    "actor": "app",
+    "version": 1,
+    "data": "{\"id\":2,\"template_id\":2,\"object_id\":2,\"title\":\"Spielplatz KW10 2026\",\"inspector\":\"Anna Schmidt\",\"inspection_date\":\"2026-03-09\",\"status\":\"bemaengelt\",\"notes\":\"Rutsche hat Kratzer\"}",
+    "hash": "25a163afb0c693b4d79014eeacd8d139399b5680a63a392f62cf19a5c8aedd00",
+    "prev_hash": "ed2ba7558eeef0b05f31d97c184407ea9f99bf76d0c1d6b338abe09b949b851e"
+  },
+  {
+    "id": 15,
+    "type": "ErgebnisseGespeichert",
+    "timestamp": "2026-03-12T05:46:40.494Z",
+    "actor": "app",
+    "version": 1,
+    "data": "{\"inspection_id\":2,\"count\":4}",
+    "hash": "8865cf0b002f9d6a11aac24168a628f9bc96bde6194f46348ddf56bc555d549e",
+    "prev_hash": "25a163afb0c693b4d79014eeacd8d139399b5680a63a392f62cf19a5c8aedd00"
+  },
+  {
+    "id": 16,
+    "type": "PruefungAngelegt",
+    "timestamp": "2026-03-12T05:46:40.495Z",
+    "actor": "app",
+    "version": 1,
+    "data": "{\"id\":3,\"template_id\":3,\"object_id\":3,\"title\":\"DGUV V3 Bohrmaschine 2026\",\"inspector\":\"Klaus Weber\",\"inspection_date\":\"2026-02-20\",\"status\":\"offen\"}",
+    "hash": "a58d321d7bbe7f1d40eb9275528b6c26b22d40f191cdc2947f448e3c9e8501c0",
+    "prev_hash": "8865cf0b002f9d6a11aac24168a628f9bc96bde6194f46348ddf56bc555d549e"
+  }
+]

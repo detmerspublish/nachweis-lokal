@@ -1,0 +1,99 @@
+name: Test + Build (Nachweis Lokal)
+
+on:
+  workflow_dispatch:
+  push:
+    tags: ['v*']
+    branches: [main]
+    paths:
+      - 'products/nachweis-lokal/**'
+      - 'packages/**'
+
+jobs:
+  build:
+    uses: ./.github/workflows/electron-build.yml
+    with:
+      product_dir: products/nachweis-lokal
+      artifact_prefix: nachweis-lokal
+    secrets:
+      PORTAL_DEPLOY_KEY: ${{ secrets.PORTAL_DEPLOY_KEY }}
+      PORTAL_HOST: ${{ secrets.PORTAL_HOST }}
+
+  publish-to-portal:
+    needs: [build]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout (fuer Version)
+        uses: actions/checkout@v4
+
+      - name: Version ermitteln
+        id: version
+        run: |
+          VERSION=$(node -p "require('./products/nachweis-lokal/package.json').version")
+          echo "version=v${VERSION}" >> "$GITHUB_OUTPUT"
+          echo "Product version: v${VERSION}"
+
+      - name: Linux-Artefakt herunterladen
+        uses: actions/download-artifact@v4
+        with:
+          name: nachweis-lokal-linux
+          path: artifacts/linux
+
+      - name: macOS-Artefakt herunterladen
+        uses: actions/download-artifact@v4
+        with:
+          name: nachweis-lokal-macos
+          path: artifacts/macos
+
+      - name: Windows-Artefakt herunterladen
+        uses: actions/download-artifact@v4
+        with:
+          name: nachweis-lokal-windows
+          path: artifacts/windows
+
+      - name: SSH-Key einrichten
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.PORTAL_DEPLOY_KEY }}" > ~/.ssh/portal_deploy
+          chmod 600 ~/.ssh/portal_deploy
+          ssh-keyscan -H "${{ secrets.PORTAL_HOST }}" >> ~/.ssh/known_hosts 2>/dev/null
+
+      - name: Artefakte per SCP zum Portal hochladen
+        env:
+          PORTAL_HOST: ${{ secrets.PORTAL_HOST }}
+          VERSION: ${{ steps.version.outputs.version }}
+        run: |
+          SSH_OPTS="-i ~/.ssh/portal_deploy -o StrictHostKeyChecking=accept-new"
+          REMOTE_BASE="/mnt/downloads/nachweis-lokal/${VERSION}"
+
+          upload_file() {
+            local platform="$1"
+            local file="$2"
+            local filename=$(basename "$file")
+            local remote_dir="${REMOTE_BASE}/${platform}"
+            echo "Uploading $filename to $platform..."
+            ssh $SSH_OPTS "root@${PORTAL_HOST}" "mkdir -p ${remote_dir} && rm -f ${remote_dir}/*"
+            scp $SSH_OPTS "$file" "root@${PORTAL_HOST}:${remote_dir}/${filename}"
+            echo "  OK: $filename"
+          }
+
+          # Linux
+          for f in artifacts/linux/*.AppImage; do
+            [ -f "$f" ] && upload_file "linux" "$f"
+          done
+
+          # macOS
+          for f in artifacts/macos/*.zip artifacts/macos/*.dmg; do
+            [ -f "$f" ] && upload_file "macos" "$f"
+          done
+
+          # Windows
+          for f in artifacts/windows/*.exe; do
+            [ -f "$f" ] && upload_file "windows" "$f"
+          done
+
+          echo "Alle Artefakte per SCP zum Portal hochgeladen."
+
+      - name: SSH-Key aufraeumen
+        if: always()
+        run: rm -f ~/.ssh/portal_deploy

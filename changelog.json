@@ -1,0 +1,57 @@
+[
+  {
+    "version": "0.5.0",
+    "released_at": "2026-03-14",
+    "features": [
+      "Usability-Refactoring: Vorlagen heissen jetzt Checklisten, Objekte heissen Geraete & Raeume",
+      "Navigation vereinfacht: EINRICHTEN / DURCHFUEHREN statt VORBEREITEN / PRUEFEN / NACHVERFOLGEN",
+      "Dashboard komplett ueberarbeitet: Ueberfaellige Pruefungen klickbar mit Jetzt-Pruefen-Button, offene Maengel als Liste, Zuletzt-bearbeitet-Bereich",
+      "Einrichtungsassistent neu: Willkommen → Checklisten → Geraet/Raum → Organisation (optional), Pruefer-Schritt entfernt",
+      "Checklisten-Bibliothek auf 35 erweitert (neu: Tueren/Tore, Werkzeugmaschinen, Druckbehaelter, Kita-Innen/Aussen, Turngeraete, Werkraum, Gastro-HACCP, Fettabscheider, Klima/Lueftung, Rauchmelder, Absturzsicherung, Hebezeuge, Notstrom, Gefahrstofflager, Minigolf, Schankanlage, Terrasse/Biergarten, Saisonstart, Kasse/TSE)",
+      "Leerformular drucken: Checkliste als leeres Formular mit Checkboxen zum Ausdrucken und Vor-Ort-Abhaken",
+      "System-Benachrichtigungen: OS-Notification bei ueberfaelligen Pruefungen beim App-Start",
+      "Papier-Workflow: Leerformulare direkt vom Dashboard drucken, gleichwertig zum digitalen Workflow"
+    ]
+  },
+  {
+    "version": "0.3.0",
+    "released_at": "2026-03-13",
+    "features": [
+      "Vorlagen-Bibliothek auf 15 Vorlagen erweitert (neu: Regale, UVV-Fahrzeug, PSA, Hygiene-Kueche, Buero-Arbeitsplatz, Sicherheitsunterweisung, IT-Serverraum, Aufzug, Legionellen, Fluchtwege)",
+      "Sammel-PDF: Mehrere Pruefprotokolle in einem kombinierten PDF-Dokument",
+      "Fotos werden jetzt direkt im PDF-Pruefprotokoll eingebettet",
+      "Vorlagen koennen dupliziert und angepasst werden",
+      "Erinnerungen: Dashboard zeigt Warnbanner bei ueberfaelligen oder bald faelligen Pruefungen",
+      "Prueferverwaltung: Pruefer mit Rolle und Qualifikation anlegen, Autovervollstaendigung bei neuer Pruefung",
+      "QR-Code auf PDF-Pruefprotokollen zur schnellen Zuordnung"
+    ]
+  },
+  {
+    "version": "0.2.0",
+    "released_at": "2026-03-06",
+    "features": [
+      "Vorlagen-Bibliothek mit 5 fertigen Pruefvorlagen (Brandschutz, DGUV V3 Elektro, Spielgeraete, Leitern, Erste-Hilfe)",
+      "Wiederkehrende Pruefungen: Automatische Folgepruefung bei Abschluss",
+      "Foto-Anhaenge pro Pruefpunkt mit Thumbnail-Galerie",
+      "Maengeltracking: Automatische Defekt-Erstellung, Status-Workflow (offen/behoben/verifiziert), Nachpruefung"
+    ]
+  },
+  {
+    "version": "0.1.0",
+    "released_at": "2026-02-28",
+    "features": [
+      "Pruefvorlagen mit beliebig vielen Pruefpunkten anlegen und verwalten",
+      "Objekte und Gegenstaende mit Standort und Kennung verwalten",
+      "Interaktive Pruefungsdurchfuehrung (OK / Maengel / N/A pro Punkt)",
+      "Status-Workflow: offen, bestanden, bemaengelt, abgebrochen",
+      "Dashboard mit Statistiken und Faelligkeits-Ampel",
+      "PDF-Pruefprotokoll, Maengelbericht und Pruefungsliste",
+      "CSV-Export und CSV-Import fuer Vorlagen",
+      "Organisationsprofil als Briefkopf auf PDFs",
+      "Revisionssicheres Aenderungsprotokoll (HMAC-SHA256 Hash-Kette)",
+      "Integritaetspruefung sichtbar im Dashboard",
+      "Probe-Lizenz (max. 10 aktive Vorlagen ohne Key)",
+      "Support-Integration und Feature-Requests direkt aus der App"
+    ]
+  }
+]
